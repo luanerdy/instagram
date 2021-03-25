@@ -1,0 +1,94 @@
+.posts {
+    width: 614px;
+    margin-top: 24px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.posts .post {
+    margin-bottom: 60px;
+    width: 614px;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 14px;
+    border: 1px solid #DBDBDB
+}
+
+.post > div:last-child {
+
+    padding: 0 0 14px 17px;
+}
+
+.posts .post ion-icon {
+    font-size: 18px;
+}
+
+.post > div:first-child {
+    padding: 15px 17px;
+}
+
+.post .post-icons {
+    padding: 12px 17px;
+}
+
+.post-icons > div ion-icon {
+    margin-right: 15px;
+}
+
+.post > img, .post video {
+    width: 614px;
+}
+
+.post .profile-name {
+    width: 156px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.profile-name img {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.post > div {
+    display: flex;
+    align-items: center;
+}
+
+.post > div:not(:last-of-type) {
+    justify-content: space-between;
+}
+
+.post > div:last-child img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.post > div:last-child p {
+    font-weight: 300;
+}
+
+.post > div:last-child p strong {
+    font-weight: 500;
+}
+
+@media (max-width: 614px) {
+    .posts {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .posts .post {
+        width: 100%;
+    }
+
+    .post > img, .post video {
+        width: 100%;
+    }
+}
